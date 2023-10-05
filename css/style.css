@@ -26,9 +26,24 @@ body {
   padding: 30px;
 }
 
+.m-b-8 {
+  margin-bottom: 80px;
+}
+.m-b-2 {
+  margin-bottom: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.col-1-of-2 {
+  width: 50%;
+}
+
 /* Header style start*/
 .header {
-  height: 90vh;
+  height: 95vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(126, 213, 111, 0.8),
@@ -133,6 +148,107 @@ body {
 .animated-btn {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
+}
+
+.btn-text:link,
+.btn-text:visited {
+  text-decoration: none;
+  color: #55c57a;
+  line-height: 2;
+  border-bottom: 1px solid #55c57a;
+  display: inline-block;
+  padding: 5px 3px 3px 3px;
+  transition: all 0.2s;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.btn-text:hover {
+  background-color: #55c57a;
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.btn-text:active {
+  transform: translateY(-1px);
+}
+
+/*About Section Start*/
+.section-about {
+  background-color: #f7f7f7;
+  padding: 15rem 5rem;
+  margin-top: -15vh;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg);
+  text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-weight: 400;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.image-box {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+}
+.image-1 {
+  left: 50px;
+  z-index: 1;
+}
+.image-2 {
+  right: 50px;
+  top: 50px;
+  z-index: 2;
+}
+
+.image-3 {
+  bottom: -340px;
+  left: 25%;
+  z-index: 3;
+}
+
+.img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  border: 5px solid #28b485;
+  padding: 10px;
+  border-radius: 4px;
 }
 
 @keyframes fadeInLeft {
